@@ -1,0 +1,54 @@
+<html>
+    <head>
+<title>emojis 🤑</title>
+<link rel="icon" href="EMOCIONES.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body>
+    <center>
+    <h1>emojis premium</h1>
+<img src="EffortlessNew.webp" width="30" height="30">
+<img src="Easy_plus.webp" width="30" height="30">
+<img src="Normal.webp" width="30" height="30">
+<img src="Hard.webp" width="30" height="30">
+<img src="Exigent.webp" width="30" height="30">
+<img src="Difficult_-_Copy.webp" width="30" height="30">
+<img src="After_Insane.webp" width="30" height="30">
+<img src="Extremish_-_New.webp" width="30" height="30">
+<img src="Agonizing.webp" width="30" height="30">
+
+
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label>Vista de la cámara web - </label>
+    <div id="camera"></div>
+    <br><br>
+    <button onclick="take_snapshot();" class="btn btn-warning">Capturar imagen</button>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label>predicción 1 - </label>
+    <p class="emotion_name" id="result_emotion_name"></p>
+    <p class="emoji" id="update_emoji"></p>
+
+    <label>predicción 2 - </label>
+    <p class="emotion_name" id="result_emotion_name2"></p>
+    <p class="emoji" id="update_emoji2"></p>
+  </div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label>instantánea - </label>
+    <div id="result"></div>
+    <br><br>
+    <button onclick="check();" class="btn btn-success">Predecir emoción</button>
+   </div>
+</center>
+    </body>    
+</html>
